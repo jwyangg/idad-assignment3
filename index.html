@@ -68,9 +68,14 @@
             life. Furthermore, the way the bubbles float up and out of the
             webpage mimics the movement and actions of bubbles.
           </p>
-          <img src="images/Day Bubble Design.png" alt="Skeuomorphism Design Example 1">
-          <img src="images/Night Bubble Design.png" alt="Skeuomorphism Design Example 2">
-
+          <img
+            src="images/Day Bubble Design.png"
+            alt="Skeuomorphism Design Example 1"
+          />
+          <img
+            src="images/Night Bubble Design.png"
+            alt="Skeuomorphism Design Example 2"
+          />
         </div>
       </div>
 
@@ -98,16 +103,14 @@
             users to navigate and a page with easy learnability as it only
             requires the user to tap around the canvas.
           </p>
-          <img src="images/Pop-up.png" alt="Modal Pop up">
+          <img src="images/Pop-up.png" alt="Modal Pop up" />
         </div>
       </div>
     </section>
 
     <!-- Rationale Section -->
     <section class="rationale-section">
-      <h2>
-        Design Rationale
-      </h2>
+      <h2>Design Rationale</h2>
 
       <div class="rationale-block">
         <h3>Feedback</h3>
@@ -127,7 +130,6 @@
           immersive, even without relying on textual instructions.
         </p>
         <p>BLAB ON ABOUT THE DIFFICULTIES APPROACHED</p>
-
       </div>
 
       <div class="rationale-block">
@@ -216,13 +218,19 @@
             smaller bubbles were associated with a higher pitch to better fit
             user expectations.
           </p>
-          <img src="images/feedback1.png" alt="feedback code 1">
-          <img src="images/feedback2.png" alt="feedback code 2">
-          <p>To imprement the sound refinements, I structured the audio logic 
-            into two separate functions: playSpawnSound() and playPopSound(). 
-        These handle the different sound events. Each function maps the bubble's size
-        to the pitch which creates a visual-audio link. Implementing the functions was quite simple 
-        however, it</p>
+          <img src="images/feedback1.png" alt="feedback code 1" />
+          <img src="images/feedback2.png" alt="feedback code 2" />
+          <p>
+            To imprement the sound refinements, I structured the audio logic
+            into two separate functions: playSpawnSound() and playPopSound().
+            These handle the different sound events. Each function maps the
+            bubble's size to the pitch which creates a visual-audio link.
+            Implementing the functions was quite simple however, it required an
+            excessive amount of trial and error to get the JavaScript to produce
+            both sounds AND link the sizes accordingly to sounds. I'm still not
+            sure what the reason was, but fortunately I got it to work in the
+            end.
+          </p>
           <p>
             Originally, the bubbles were intended to be static on screen with a
             reset button to clear the canvas. In the prototype stage, the
@@ -244,6 +252,16 @@
             possible. This was also combined with randomised colours, to enhance
             the unpredictability.
           </p>
+          <img
+            src="images/Prototype Bubble Design.png"
+            alt="prototype design"
+          />
+          <img
+            src="images/Original Bubble Design.png"
+            alt="mid check-in design"
+          />
+          <img src="images/Day Bubble Design.png" alt="mid check-in design" />
+          <p>Before,</p>
         </div>
       </div>
 
@@ -269,6 +287,36 @@
             generated, whereas the night mode has slightly more muted, deeper
             sounds. This gives users a reason to experiment with the interface
             longer, highlighting the randomness and visual aesthetics more.
+          </p>
+        </div>
+      </div>
+      <div class="change-group">
+        <div class="change-label">Method</div>
+        <div class="change-text">
+          <p>
+            During my research stages, I discovered that the bubbles could be
+            generated via CSS or JS. In the prototype stage I decided to take
+            the CSS approach, as it was something I could understand. However, I
+            quickly realised there were some limitations for the purpose I was
+            using it for. I ended up having to go back and learn the harder
+            methods that I was initially avoiding. Alongside this, I was able to
+            get help with learning and understanding from a friend whose
+            expertise lies in JS. Below shows the before and after of the JS
+            page. In the "before," the bubbles were generated via JS but were
+            styled with CSS, in the after the full bubble design was with JS and
+            the CSS focused on the background styling.
+          </p>
+          <img src="images/before.png" alt="non-js approach" />
+          <img src="images/after.png" alt="js approach" />
+          <p>
+            Although I had to learn a new method in a very short period of time,
+            I was able to execute it faster than expected due to having briefly
+            learnt these methods previously, from another project.
+            Unfortunately, it still required me to trial and error numerous
+            times as I still needed to get used to the new method. In the end,
+            I'm very glad I decided to take the more difficult route beause I
+            don't think I would've been able to achieve the final outcome to the
+            current standard it is at.
           </p>
         </div>
       </div>
@@ -300,7 +348,8 @@
             <p>
               Began developing the interactive webpage, focusing primarily on
               implementing the core JavaScript functions. Tested initial click
-              interactions. Also focused on researching methods to create the interactions.
+              interactions. Also focused on researching methods to create the
+              interactions.
             </p>
           </div>
         </div>
@@ -446,10 +495,11 @@
       </div>
     </section>
     <div class="buttons">
-        <button
-          onclick="window.open('https://github.com/jwyangg/idad-assignment.git', '_blank')"
-        >
-          Link to Code Repository
-        </button>
+      <button
+        onclick="window.open('https://github.com/jwyangg/idad-assignment.git', '_blank')"
+      >
+        Link to Code Repository
+      </button>
+    </div>
   </body>
 </html>
