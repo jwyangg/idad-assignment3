@@ -125,6 +125,13 @@ h2 {
 }
 
 /* ===== DESIGN VALUES ===== */
+.value-content img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(77, 100, 203, 0.2);
+}
+
 .design-values {
   max-width: 1100px;
   margin: 0 auto;
@@ -166,6 +173,13 @@ h2 {
 }
 
 /* ===== RATIONALE SECTION ===== */
+/* .rationale-section img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(77, 100, 203, 0.2);
+} */
+
 .rationale-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -191,6 +205,14 @@ h2 {
 }
 
 /* ===== CHANGES SECTION ===== */
+.change-text img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(77, 100, 203, 0.2);
+  margin-bottom: 1rem;
+}
+
 .changes-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -199,15 +221,15 @@ h2 {
 
 .intro-text {
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 4rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #b8b8d0;
 }
 
 .change-group {
   display: grid;
   grid-template-columns: 200px 1fr;
-  gap: 3rem;
   margin-bottom: 4rem;
 }
 
@@ -215,13 +237,12 @@ h2 {
   font-family: "Modak", system-ui;
   font-size: 2rem;
   color: #70459b;
-  position: sticky;
   top: 20px;
 }
 
 .change-text p {
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1.05rem;
   color: #d0d0e0;
 }
@@ -361,65 +382,4 @@ h2 {
   line-height: 1.8;
   font-size: 1.05rem;
   color: #d0d0e0;
-}
-
-/* ===== IMAGE PLACEHOLDERS ===== */
-.image-placeholder {
-  max-width: 1200px;
-  margin: 80px auto;
-  height: 500px;
-  background: linear-gradient(
-    135deg,
-    rgba(77, 100, 203, 0.05),
-    rgba(112, 69, 155, 0.05)
-  );
-  border-radius: 15px;
-  border: 2px dashed rgba(123, 224, 219, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-placeholder p {
-  font-size: 1.5rem;
-  opacity: 0.3;
-  font-style: italic;
-  color: #7be0db;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .landing h1 {
-    font-size: 4rem;
-  }
-  .content-box {
-    padding: 40px 30px;
-  }
-  section {
-    padding: 60px 20px;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  .value-item {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .value-number {
-    font-size: 3rem;
-  }
-  .change-group {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .change-label {
-    position: static;
-  }
-  .split-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .timeline {
-    padding-left: 30px;
-  }
 }
