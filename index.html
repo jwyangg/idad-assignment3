@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 - Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Landing Section -->
+    <section class="landing">
+      <h1>A3: BUBBLE POP!</h1>
+      <h2>Jiwon Yang</h2>
+      <h2>S4082101</h2>
+
+      <div class="buttons">
+        <button
+          onclick="window.open('https://bubblepop-prototype.netlify.app/', '_blank')"
+        >
+          Bubble Pop! Prototype
+        </button>
+        <button
+          onclick="window.open('https://idad-bubblepop.netlify.app/', '_blank')"
+        >
+          Bubble Pop! FINAL
+        </button>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section">
+      <div class="content-box">
+        <h2>Overview of Project</h2>
+        <p>
+          This project is a fun interactive audio-visual webpage. Users can
+          generate and pop bubbles to generate accompanying sounds. The design
+          was built based off of the prompts "No text characters" and
+          "Skeuomorphism", utilising the advanced JavaScript technique
+          "math.random()".
+        </p>
+
+        <p>
+          The initial inspirations derived from soap bars and its transformation
+          into bubbles, naturally provoking the idea to create a system that
+          generates bubbles upon clicking.
+        </p>
+      </div>
+    </section>
+
+    <!-- Design Values -->
+    <section class="design-values">
+      <h2>Design's Guiding Values</h2>
+
+      <div class="value-item">
+        <div class="value-number">01</div>
+        <div class="value-content">
+          <h3>Skeuomorphic Design</h3>
+          <p>
+            The webpage applies 'Skeuomorphic Design' to the bubbles that are
+            generated. The, almost, transparent bubbles in various colours with
+            highlights similarly reflects the aesthetics of bubbles in real
+            life. Furthermore, the way the bubbles float up and out of the
+            webpage mimics the movement and actions of bubbles.
+          </p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <div class="value-number">02</div>
+        <div class="value-content">
+          <h3>Playful Design</h3>
+          <p>
+            It is intended that this webpage is just a fun interactive page,
+            which gives users the freedom to generate and pop bubbles wherever.
+            However, the randomisation makes it contain restriction and
+            structure that prevents users from generating the sound, size and
+            colour to their preference.
+          </p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <div class="value-number">03</div>
+        <div class="value-content">
+          <h3>Learnability</h3>
+          <p>
+            The pop-up at the beginning, upon visiting the webpage, provides a
+            basic introduction to the website. Overall, it is simple enough for
+            users to navigate and a page with easy learnability as it only
+            requires the user to tap around the canvas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <p>[ Your Image Here ]</p>
+    </div>
+
+    <!-- Rationale Section -->
+    <section class="rationale-section">
+      <h2>
+        Rationale: Designing UI's Feedback, Information Design, Mapping and
+        Learnability
+      </h2>
+
+      <div class="rationale-block">
+        <h3>Feedback</h3>
+        <p>
+          When approaching the feedback of this system, it was very
+          self-explanatory as a result of approaching the design through the
+          lens of skeuomorphism. Although in real life, the sounds of bubbles
+          forming and popping are almost inaudible, the design intentionally
+          exaggerates these cues to provide clear, immediate feedback to the
+          user. Each generated bubble is accompanied by a "creation" sound that
+          confirms the action, while a satisfying "pop" sound follows when the
+          user clicks on a bubble. This not only enhances the tactile and
+          playful quality of the interaction but also reinforces a sense of
+          cause and effect, allowing users to intuitively understand how their
+          actions influence the system. The use of both auditory and visual
+          feedback helps make the interface feel responsive, lively, and
+          immersive, even without relying on textual instructions.
+        </p>
+      </div>
+
+      <div class="rationale-block">
+        <h3>Information Design</h3>
+        <p>
+          In terms of information design, the project intentionally removes
+          textual elements, relying solely on visual and auditory cues to
+          communicate interaction possibilities. The layout is very minimal,
+          with the entire screen acting as the interactive space, immediately
+          signalling that user engagement happens through clicking rather than
+          navigating, for example, menus and buttons. However, a button to
+          change modes exists, a "sun" and "moon" emoji communicates there being
+          a "day" and "night" mode. The colour palette and sound shifts between
+          the "day" and "night" mode to communicate environmental context and
+          mood. Moreover, the randomly generated bubble sizes and hues introduce
+          a sense of variability. The approach that was taken ensure that all
+          necessary information, such as interactivity, responsiveness and
+          atmosphere, is conveyed intuitively through sensory feedback rather
+          than explicit instruction, despite there being an introductory pop-up.
+        </p>
+      </div>
+
+      <div class="rationale-block">
+        <h3>Mapping</h3>
+        <p>
+          The mapping in this design is direct and intuitive, closely reflecting
+          real-world cause and effect relationships. A single click anywhere on
+          the screen generates a bubble, while clicking an existing bubble
+          causes it to pop. This one-to-one relationship between input and
+          output makes the interaction easy to understand without instruction,
+          encouraging playful exploration. The toggle between day and night mode
+          is similarly straightforward, with immediate visual feedback
+          reinforcing the user's control over the environment. By maintaining
+          consistent and predictable mappings, the design ensures users can
+          quickly grasp the system's logic and engage with it in a natural,
+          satisfying way.
+        </p>
+      </div>
+
+      <div class="rationale-block">
+        <h3>Learnability</h3>
+        <p>
+          The learnability of this system is extremely high due to its
+          simplicity and reliance on intuitive, natural interactions. Users can
+          immediately understand how to engage with the interface through direct
+          manipulation - clicking anywhere generates a bubble, and clicking
+          again pops it. The immediate auditory and visual feedback reinforces
+          these actions, allowing users to grasp the system's logic within
+          seconds. Because the interface avoids text or complex controls, it
+          invites experimentation rather than requiring explanation, despite the
+          explanatory pop-up. Even the day and night toggle can be discovered
+          through exploration, making the experience playful, accessible and
+          easy to learn without prior instruction.
+        </p>
+      </div>
+    </section>
+
+    <!-- Changes Section -->
+    <section class="changes-section">
+      <h2>Significant Changes + Feedback Adjustments</h2>
+
+      <p class="intro-text">
+        Following the prototype stage, I made several adjustments to address the
+        user feedback received and strengthen the overall interactivity.
+      </p>
+
+      <div class="change-group">
+        <div class="change-label">Bubbles</div>
+        <div class="change-text">
+          <p>
+            The most notable change was the introduction of the popping
+            function. Users are now able to interact with each generated bubble,
+            rather than passively watching them fade away, as it was in the
+            initial prototype. This shift made the interface feel more dynamic
+            and aligned with the playful and tactile associations of real
+            bubbles.
+          </p>
+
+          <p>
+            I also redesigned the sound system, as per feedback, to create
+            lighter, bouncier tones that better match the visual characteristics
+            of each bubble. Creating the popping functions also required the
+            inclusion of appropriate sounds to accompany the popping action.
+            Furthermore, the feedback suggested confusion over the randomised
+            sounds, so larger bubbles were associated with a lower pitch and
+            smaller bubbles were associated with a higher pitch to better fit
+            user expectations.
+          </p>
+
+          <p>
+            Originally, the bubbles were intended to be static on screen with a
+            reset button to clear the canvas. In the prototype stage, the
+            floating animation was experimented with to see what users thought.
+            Through reflection and user testing, it was decided that the
+            animations would be kept, with slight adjustments. Instead of the
+            bubbles floating up and fading away into the background, the bubbles
+            now float, bob side-to-side and disappear from clicks to pop or
+            naturally from floating. This approach made the interface feel more
+            natural, as a result of the bubbles feeling more alive and being
+            slightly more unpredictable, aiding in creating a more engaging user
+            experience.
+          </p>
+
+          <p>
+            Visually, I was able to upgrade the bubbles from the flat, opaque
+            blue circles by giving each bubble a slightly transparent reflective
+            form, making them appear as three-dimensional and organic as
+            possible. This was also combined with randomised colours, to enhance
+            the unpredictability.
+          </p>
+        </div>
+      </div>
+
+      <div class="change-group">
+        <div class="change-label">Background</div>
+        <div class="change-text">
+          <p>
+            Previously, the prototype included a static black background as the
+            canvas, but after feedback, it was altered to be an animated CSS
+            gradient to mimic water-like properties. Although the animation is
+            very subtle and almost unnoticeable, it better supports the
+            atmosphere and aids in the immersion.
+          </p>
+
+          <p>
+            Personally, the initial idea of the webpage felt as though it was
+            lacking a certain element, influencing the decision to add the
+            animated background, however there was one more addition to the
+            design. The biggest conceptual addition was the day and night mode
+            toggle, which not only changes the background and bubble colours but
+            also alters the sound palette. The sound palette for the day mode is
+            lighter and has more of a "popping" property, when bubbles are
+            generated, whereas the night mode has slightly more muted, deeper
+            sounds. This gives users a reason to experiment with the interface
+            longer, highlighting the randomness and visual aesthetics more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <p>[ Your Image Here ]</p>
+    </div>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <h2>Development Timeline</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 1</h4>
+            <span class="date">25/08–31/08</span>
+            <p>
+              Consolidated the core concept idea and conducted initial research
+              to explore interactive sound design methods. Created the project
+              repository.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 2</h4>
+            <span class="date">01/09–07/09</span>
+            <p>
+              Began developing the interactive webpage, focusing primarily on
+              implementing the core JavaScript functions. Tested initial click
+              interactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 3</h4>
+            <span class="date">08/09–14/09</span>
+            <p>
+              Added an introductory pop-up to introduce users to the concept.
+              Refined visual elements, experimenting with color and motion to
+              improve user engagement.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item highlight">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 4</h4>
+            <span class="date">15/09–21/09</span>
+            <p>
+              <strong>Assignment 2 Prototype Due</strong> — Collected peer and
+              tutor feedback. Prioritised key improvements and learned new
+              JavaScript methods.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 5</h4>
+            <span class="date">22/09–28/09</span>
+            <p>
+              Revised the visual design of the bubbles to achieve a more organic
+              look. Experimented with different sound elements to align audio
+              with visual style.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 6</h4>
+            <span class="date">29/09–05/10</span>
+            <p>
+              Introduced day and night mode feature. Mapped bubble size to sound
+              pitch, linking larger bubbles to lower frequencies and smaller
+              bubbles to higher ones.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 7</h4>
+            <span class="date">06/10–12/10</span>
+            <p>
+              Finalised and refined the sound design, ensuring tonal balance and
+              smooth playback.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Week 8</h4>
+            <span class="date">13/10–17/10</span>
+            <p>
+              Conducted final quality checks across sound, visuals, and
+              interaction. Ensured overall consistency between aesthetic and
+              functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="reflection-section">
+      <div class="split-content">
+        <div class="split-left">
+          <h3>Design Aspect Most Proud Of</h3>
+          <p>
+            The visual aesthetic of the project is what I am most proud of.
+            Although it was challenging to achieve the desired look through
+            JavaScript, the final result successfully captures the playful and
+            child-like quality I envisioned. Every element, from the motion of
+            the bubbles to their varying colours and sizes worked more
+            cohesively than expected to create a satisfying visual experience.
+          </p>
+          <p>
+            Additionally, the sound design became one of the most rewarding
+            aspects of the project. Despite facing significant difficulty when
+            creating and adjusting the sounds, the final outcome exceeded
+            expectations. The combination of visual and auditory feedback feels
+            balanced and immersive, enhancing the overall interaction, to a
+            higher standard that I was initially anticipating.
+          </p>
+        </div>
+
+        <div class="split-right">
+          <h3>Most Challenging Design Aspect</h3>
+          <p>
+            The most challenging part of the design process was learning and
+            applying different JavaScript methods to achieve both the desired
+            functionality and aesthetic. Many iterations were needed to
+            fine-tune how bubbles behaved and interacted with user input.
+          </p>
+          <p>
+            As it was briefly mentioned, sound manipulation also posed a major
+            challenge - specifically, aligning the pitch with bubble size so
+            that larger bubbles produced lower tones and smaller ones created
+            higher tones. Often times, the sound would still come out to be
+            randomised and it required a lot of trial and error. Occasionally,
+            if the sizes were correctly matched with the sounds, the actual
+            soundscape of the bubbles would turn out to be different to what was
+            expected.
+          </p>
+        </div>
+      </div>
+
+      <div class="future-section">
+        <h3>Looking Further</h3>
+        <p>
+          If I had more time to continue developing the project, I would have
+          liked to explore adding more user-controlled options to expand
+          interactivity. This could include a toggle to choose between static
+          and dynamic bubble movement, giving users more control over how the
+          bubbles behave on screen. I would also introduce settings that allow
+          users to switch between random or controlled bubble generation,
+          letting them decide whether bubble sizes are entirely randomised or
+          follow specific parameters. Additionally, I would experiment with
+          non-circular bubble shapes to create a more visually diverse and
+          playful experience, pushing the aesthetic beyond traditional bubble
+          forms.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
